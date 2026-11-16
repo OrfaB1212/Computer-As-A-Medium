@@ -17,14 +17,12 @@ public class WeaponMovement : MonoBehaviour
         if (playerMovement == null) return;
 
         Vector2 dir = playerMovement.facingDirection;
+        if (dir == Vector2.zero) return;
 
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, angle);
+        
+        float adjustedX = (transform.lossyScale.x < 0) ? -dir.x : dir.x;
 
-        // Keep the current size, only flip the Y sign when facing left
-        Vector3 currentScale = transform.localScale;
-        float absY = Mathf.Abs(currentScale.y);
-        currentScale.y = (dir == Vector2.left) ? -absY : absY;
-        transform.localScale = currentScale;
+        float angle = Mathf.Atan2(dir.y, adjustedX) * Mathf.Rad2Deg;
+        transform.localRotation = Quaternion.Euler(0f, 0f, angle);
     }
 }
