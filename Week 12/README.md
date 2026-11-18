@@ -4,4 +4,4 @@ Video: https://youtu.be/gsJsR3eq0Ms
 Thomas Fairchild: Task 2: Make your bullet deal damage to the enemy.
 Video:https://youtu.be/a4l5nn2Wchs
 James Walton: Task 3: Create another Coroutine using StartCouroutine() and IEnumerator. Anything counts!
-Video:
+Video: https://www.youtube.com/watch?v=64efl5lUaRs
