@@ -2,6 +2,6 @@
 Thomas Fairchild:
 Video:
 Orfa Baez: Task 2: Health pack spawn randomly
-Video:
+Video: https://youtu.be/BIuPUqxpkT8
 James Walton:
 Video:
